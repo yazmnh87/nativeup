@@ -89,6 +89,11 @@ yarn add mobx \
 git add .
 git commit -m "Add @reststate/mobx"
 
+cd ios
+pod install
+cd ..
+git commit -m "Install Cocoapods"
+
 cp "${DIR}/template/App.js" App.js
 cp "${DIR}/template/src/stores.js" src/stores.js
 cp -r "${DIR}/template/src/screens" src/screens
