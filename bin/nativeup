@@ -55,7 +55,12 @@ cp -r "${DIR}/template/github" .github
 git add .
 git commit -m "Set up GitHub Actions workflow"
 
-yarn add react-navigation
+yarn add @react-navigation/native \
+         react-native-reanimated \
+         react-native-gesture-handler \
+         react-native-screens \
+         react-native-safe-area-context \
+         @react-native-community/masked-view
 if [ "$1" = "cli" ]; then
   yarn add react-native-gesture-handler
 fi
